@@ -11,9 +11,8 @@
         tailwind.config = {
           theme: {
             extend: {
-              backgroundImage: {
-                bgHero:"url('./images/image-header-desktop.jpg')",
-                bgMobileHero:"url('./images/image-header-mobile.jpg')"
+              backgroundColor: {
+                bgColor: "#090b1a",
               }
             }
           }
@@ -22,7 +21,7 @@
 
     <title>Stats Preview</title>
 </head>
-<body class="bg-black">
+<body class="bg-bgColor">
     <div class="flex py-6 lg:py-0 overflow-hidden justify-center lg:h-screen items-center">
         <main class="flex flex-col-reverse lg:flex-row bg-gray-900 lg:w-[70rem] w-11/12 rounded-xl">
             <section class="p-16 grid lg:w-3/4 grid-cols-1 gap-16">
@@ -47,7 +46,7 @@
             </section>
             <section class="rounded-r-xl lg:w-3/4 relative">
                 <span class="bg-purple-900 h-full w-full z-40 bg-opacity-60 absolute rounded-t-xl lg:rounded-r-xl lg:rounded-tl-none"></span>
-                <img src="./images/image-header-desktop.jpg" class="hidden lg:block lg:h-full rounded-r-xl">
+                <img src="./images/image-header-desktop.jpg" class="object-cover hidden lg:block lg:h-full rounded-r-xl">
                 <img src="./images/image-header-mobile.jpg" class="lg:hidden block w-full rounded-t-xl">
             </section>
         </main>
